@@ -1,0 +1,36 @@
+# API Call Documentation Generator
+
+This project analyzes the source code for API calls using `connect` and generates documentation with the corresponding URLs and methods in JSON format.
+
+## 🚀 **Features**
+
+- **Static Code Analysis**: The project scans `.js` and `.ts` files for API calls made with `connect` (our connect360 interface).
+- **Automatic Documentation Generation**: API calls are extracted and formatted into a JSON file containing relevant information (file, method, and URL).
+- **Exclusion of Test Files**: `.spec.ts` test files are excluded to avoid including test code in the documentation.
+
+## 🛠️ **Technologies Used**
+
+- Node.js
+- Babel for JavaScript/TypeScript code parsing
+- Prettier for JSON formatting
+
+## 📦 **Installation**
+
+1. Clone the repository:
+    ```bash
+    git clone git@github.com:sychus/scan-api.git
+    ```
+
+2. Install the required dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Configure the project paths by editing the `SOURCE_DIR` and `API_DOCS_OUTPUT` variables in the `main.js` file.
+
+## 📝 **Usage**
+
+Run the script to scan the files and generate the API call documentation:
+
+```bash
+node main.js
